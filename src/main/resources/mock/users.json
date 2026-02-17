@@ -1,0 +1,17 @@
+[
+  {
+    "user_id": 1,
+    "username": "John Doe 2",
+    "email": "john2@example.com"
+  },
+  {
+    "user_id": 2,
+    "username": "Jane Smith 2",
+    "email": "jane2@example.com"
+  },
+  {
+    "user_id": 3,
+    "username": "Coding Master 2",
+    "email": "dev2@test.com"
+  }
+]
