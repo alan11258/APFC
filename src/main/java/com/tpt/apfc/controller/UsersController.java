@@ -5,6 +5,9 @@ import com.tpt.apfc.service.UsersQueryService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 @RestController
 @RequestMapping("/api/users")
 public class UsersController {
@@ -29,6 +32,19 @@ public class UsersController {
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
     */
+
+    @GetMapping
+    public ResponseEntity<Map<String, Object>> missingUserIdHint() {
+
+        System.out.println("api/users/missingUserIdHint");
+
+        Map<String, Object> body = new LinkedHashMap<>();
+        body.put("message", "請帶入 user_id");
+        body.put("example", "/api/users/{userId} 例如 /api/users/123");
+
+        return ResponseEntity.badRequest().body(body);
+    }
+
 
     @GetMapping("/{userId}")
     public ResponseEntity<UsersEntity> getUserById(@PathVariable Integer userId) {
