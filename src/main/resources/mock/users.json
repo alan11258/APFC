@@ -1,17 +1,23 @@
 [
   {
     "user_id": 1,
-    "username": "John Doe 2",
-    "email": "john2@example.com"
+    "username": "John Doe",
+    "email": "john.doe@whoami.com"
   },
   {
     "user_id": 2,
-    "username": "Jane Smith 2",
-    "email": "jane2@example.com"
+    "username": "Jane Smith",
+    "email": "jane.smith@whoami.com"
   },
   {
     "user_id": 3,
-    "username": "Coding Master 2",
-    "email": "dev2@test.com"
+    "username": "John Wick",
+    "email": "John.Wick@doglover.com"
+  },
+  {
+    "user_id": 4,
+    "username": "Robert Downey",
+    "email": "Robert.Downey@catlover.com"
   }
+
 ]
