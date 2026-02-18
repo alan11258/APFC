@@ -2,12 +2,14 @@ package com.tpt.apfc.controller;
 
 import com.tpt.apfc.bean.UsersEntity;
 import com.tpt.apfc.service.UsersQueryService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+@Slf4j
 @RestController
 @RequestMapping("/api/users")
 public class UsersController {
@@ -36,7 +38,7 @@ public class UsersController {
     @GetMapping
     public ResponseEntity<Map<String, Object>> missingUserIdHint() {
 
-        System.out.println("api/users/missingUserIdHint");
+        log.info("api/users/missingUserIdHint");
 
         Map<String, Object> body = new LinkedHashMap<>();
         body.put("message", "請帶入 user_id");
@@ -49,7 +51,7 @@ public class UsersController {
     @GetMapping("/{userId}")
     public ResponseEntity<UsersEntity> getUserById(@PathVariable Integer userId) {
 
-        System.out.println("api/users/userId=" + userId );
+        log.info("api/users/userId={}", userId);
 
         UsersEntity user = usersService.findById(userId);
         return (user == null) ? ResponseEntity.notFound().build() : ResponseEntity.ok(user);
