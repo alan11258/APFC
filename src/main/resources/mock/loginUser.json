@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "account": "admin",
+    "name": "Admin User",
+    "passwordHash": "ab1212",
+    "email": "admin@example.test",
+    "createdAt": "2025-01-01T09:00:00",
+    "lastLoginAt": "2026-02-01T10:00:00",
+    "loginErrorCount": 0,
+    "status": 1
+  },
+  {
+    "id": 2,
+    "account": "hello",
+    "name": "Hello Operator",
+    "passwordHash": "ab1212",
+    "email": "hello@example.test",
+    "createdAt": "2025-02-01T09:00:00",
+    "lastLoginAt": "2026-02-10T10:00:00",
+    "loginErrorCount": 0,
+    "status": 1
+  },
+  {
+    "id": 3,
+    "account": "locked",
+    "name": "Locked User",
+    "passwordHash": "ab1212",
+    "email": "locked@example.test",
+    "createdAt": "2025-03-01T09:00:00",
+    "lastLoginAt": "2025-12-01T10:00:00",
+    "loginErrorCount": 5,
+    "status": 2
+  },
+  {
+    "id": 4,
+    "account": "deleted",
+    "name": "Deleted User",
+    "passwordHash": "ab1212",
+    "email": "deleted@example.test",
+    "createdAt": "2025-04-01T09:00:00",
+    "lastLoginAt": "2025-11-01T10:00:00",
+    "loginErrorCount": 0,
+    "status": 3
+  }
+]

@@ -73,6 +73,11 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
 
 		<!-- Fix spring-boot-starter-test -> assertj-core:3.27.6 CVE-2026-24400 7.3 -->
 		<dependency>
